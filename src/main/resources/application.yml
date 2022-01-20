@@ -1,0 +1,12 @@
+server:
+  port:
+    8084
+
+spring:
+  cloud:
+    function:
+      definition: consumeAsset
+    stream:
+      bindings:
+        consumeAsset-in-0:
+          destination: out-to-geneva
